@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+:root {
+    --primary-color: #f7d9bd;
+    --secondar-color-0: #2a1d18;
+    /* page dark color */
+    --secondary-color-1: #efc3a6;
+    --secondary-color-2: #d9a58f;
+    --secondary-color-3: #f9e7c9;
+    --secondary-color-4: #e8a98a;
+    --secondary-color-5: #f2cf9f;
+    --secondary-color-6: #c98f7a;
+    --secondary-color-7: #f6ece2;
+    /* the all color are using for light background mode */
+    --secondary-color-8: #3b2a22;
+    /* for text color */
+    --secondary-color-9: #6f594e;
+    /* for muted text color */
+    --secondary-color-10: #a8553a;
+    /* for button link color */
+    --secondary-color-11: #ffffff;
+    /* for button text color */
+    /* the all color are using for dark background mode */
+    --secondary-color-12: #f3e6da;
+    /* text color */
+    --secondar-color-13: #c9b3a4;
+    /* muted text */
+    --secondary-color-14: #e29a72;
+    /*accent color */
+    --secondary-color-15: #2a1d18;
+    /* button text */
+}
+
+body {
+    background: linear-gradient(135deg,
+            var(--primary-color),
+            var(--secondary-color-3),
+            var(--secondary-color-7),
+            var(--secondary-color-5));
+    color: var(--secondar-color-0);
+    min-height: 100vh;
+}
+
+.Home {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-list a {
+    color: var(--secondary-color-8);
+}
+
+.nav-list a:hover {
+    color: var(--secondary-color-10);
+}
+
+.About {
+    margin: 3rem 0 0 1rem;
+    font-weight: 200;
+}
+
+h1 {
+    color: var(--secondary-color-10);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.para {
+    margin: 1rem 0 0 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    /*word-break: keep-all;*/
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
