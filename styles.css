@@ -46,7 +46,9 @@ body {
     min-height: 100vh;
 }
 
-.Home {
+/* this css is used for nanbar */
+
+.nav-home {
     display: flex;
     justify-content: space-between;
     margin: 1rem;
@@ -56,6 +58,7 @@ body {
     display: flex;
     gap: 1.5rem;
     list-style: none;
+
 }
 
 .nav-list a {
@@ -66,29 +69,189 @@ body {
     color: var(--secondary-color-10);
 }
 
-.About {
-    margin: 3rem 0 0 1rem;
-    font-weight: 200;
+/* and this css used for 2nd section and infromation */
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px 4%;
 }
 
-h1 {
-    color: var(--secondary-color-10);
-    font-size: 3rem;
+.image-box {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    isolation: isolate;
+    border-radius: 25px;
+
+}
+
+.image-box::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 28px;
+    background: conic-gradient(from 0deg,
+            transparent,
+            #00008B 290deg,
+            #60A5FA 310deg,
+            #ffffff 330deg,
+            transparent);
+    z-index: -1;
+    animation: rotateLight 10s linear infinite;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: var(--secondary-color-9);
+}
+
+.content h1 {
+    font-size: 45px;
     font-weight: 600;
+    margin-bottom: 9px;
+    color: var(--secondary-color-8);
+}
+
+.content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--secondary-color-9);
+}
+
+.content button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+button {
+    color: #f3e6da;
+    background-color: var(--secondary-color-10);
+    border: 2px solid var(--secondary-color-15);
+    border-radius: 12px;
+    border-right: #f3e6da;
+}
+
+/* this css used for about and paraghraph for 3rd part */
+.about h1 {
+    color: var(--secondary-color-15);
+    margin: 45px;
+
 }
 
 .para {
-    margin: 1rem 0 0 1rem;
+    border: 2px solid var(--secondary-color-12);
+    border-radius: 20px;
+    background-color: var(--secondary-color-12);
+    margin: 20px;
+    padding: 10px 12px;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--secondary-color-8);
 }
 
-h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    /*word-break: keep-all;*/
-    line-height: 1.2;
+/* this css used for 4th part skill based */
+.skills {
+    margin: 45px;
+
 }
 
-p {
+.skills-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skills-box span {
+    border: 2px solid var(--secondary-color-10);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--secondary-color-10);
+    background-color: var(--secondary-color-7);
+}
+/* this is a css for 5th part project information and (a) tag */
+#heading-one {
+    margin: 45px 40px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 15px;
+
+}
+
+.card {
+    flex: 1;
+    min-width: 80px;
+    background-color: var(--secondary-color-7);
+    border: 2px solid var(--secondary-color-10);
+    border-radius: 20px;
+    gap: 20px;
+    padding: 1.5rem;
+}
+
+.card h3 {
     font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: var(--secondary-color-10);
+
+}
+
+.card h1 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--secondary-color-8);
+}
+
+.card p {
     font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: var(--secondary-color-8);
+}
+
+.card a {
+    color: var(--secondary-color-15);
+}
+
+.card a:hover {
+    color: var(--secondary-color-10);
+}.contact{
+    margin: 45px 40px;
+}.contact-box{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 2px solid var(--secondary-color-10);
+    border-radius: 24px;
+    background-color: var(--secondary-color-7);
+}button{
+    padding: 9px;
+}button:hover{
+    color: var(--secondary-color-11);
+    background-color: green;
 }
